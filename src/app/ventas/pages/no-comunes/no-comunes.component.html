@@ -6,7 +6,21 @@
 </div>
 <div class="p-grid">
   <div class="p-col p-md-6 p-sm-9">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corporis ipsa hic molestias quae dolorem, odio provident delectus expedita nam placeat voluptatibus enim dicta error pariatur quod vitae nobis nisi.
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+      Saludos {{nombre}} , es un placer
+      {{genero | i18nSelect:invitacionMapa}}
+      a nuestro evento
+      <br/>
+      <br/>
+      <span>genero | i18nSelect:invitacionMapa}</span>
+    </p-fieldset>
+
+  </div>
+
+  <div class="p-col p-md-6 p-sm-9">
+    <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+      Actualmente {{clientes.length | i18nPlural:clientesMapa}}.
+    </p-fieldset>
   </div>
 
 </div>
