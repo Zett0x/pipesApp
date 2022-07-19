@@ -6,7 +6,8 @@ import {CardModule} from 'primeng/card'
 import {MenubarModule} from 'primeng/menubar';
 import {FieldsetModule} from 'primeng/fieldset';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import {ToolbarModule} from 'primeng/toolbar';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
 
@@ -15,7 +16,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ButtonModule,
     MenubarModule,
     FieldsetModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToolbarModule,
+    TableModule
     ]
 })
 export class PrimeNgModule { }

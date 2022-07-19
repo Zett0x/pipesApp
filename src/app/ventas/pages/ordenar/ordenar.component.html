@@ -1,1 +1,23 @@
-<p>ordenar works!</p>
+<div class="text-layout">
+  <h1>Pipes Personalizados</h1>
+  <p>Pipes creados por {{'nosotros'| mayusculas:mayus}}</p>
+  <hr/>
+  <button pButton (click)="changeMayus()">Toggle mayus</button>
+</div>
+
+<p-toolbar>
+  <div class="p-toolbar-group-left"></div>
+  <div class="p-toolbar-group-right">
+    <button pButton
+    icon="pi-sort"
+    label="Por nombre"
+    class="p-mr-1"
+    ></button>
+
+    <button pButton
+    icon="pi-sort"
+    label="Valores"
+    class="p-mr-1"
+    ></button>
+  </div>
+</p-toolbar>
