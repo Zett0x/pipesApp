@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../../interfaces/products.interface';
+
+import { COLOR, Heroe } from '../../interfaces/ventas.interface';
 
 @Component({
   selector: 'app-ordenar',
@@ -7,7 +8,34 @@ import { Product } from '../../interfaces/products.interface';
 })
 export class OrdenarComponent implements OnInit {
   mayus:boolean=true;
-  products:Product[]=[{code:1,name:'pc',category:'technology',quantity:4}];
+
+  heroes:Heroe[]=[
+  { nombre:'Iron Man',
+    vuela:true,
+    color:COLOR.ROJO
+  },
+  {
+    nombre:'Super Man',
+    vuela:true,
+    color:COLOR.AZUL
+  },
+  {
+    nombre:'Batman',
+    vuela:false,
+    color:COLOR.NEGRO
+  },
+  {
+    nombre:'Daredevil',
+    vuela:false,
+    color:COLOR.ROJO
+  },
+  {
+    nombre:'Linterna Verde',
+    vuela:true,
+    color:COLOR.VERDE
+  },
+
+];
   constructor() { }
 
   ngOnInit(): void {
