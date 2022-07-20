@@ -45,4 +45,5 @@ export class OrdenarComponent implements OnInit {
     this.mayus=!this.mayus;
   }
 
+
 }
