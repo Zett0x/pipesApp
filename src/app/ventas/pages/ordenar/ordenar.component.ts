@@ -8,6 +8,7 @@ import { COLOR, Heroe } from '../../interfaces/ventas.interface';
 })
 export class OrdenarComponent implements OnInit {
   mayus:boolean=true;
+  ordenarPor:string='';
 
   heroes:Heroe[]=[
   { nombre:'Iron Man',
@@ -43,6 +44,10 @@ export class OrdenarComponent implements OnInit {
 
   changeMayus():void{
     this.mayus=!this.mayus;
+  }
+
+  changeOrder(valor:string){
+    this.ordenarPor=valor;
   }
 
 
